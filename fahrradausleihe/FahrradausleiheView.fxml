@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="481.0" prefWidth="956.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fahrradausleihe.FahrradausleiheController">
+   <children>
+      <AnchorPane layoutX="-111.0" layoutY="-96.0" prefHeight="186.0" prefWidth="425.0">
+         <children>
+            <Label layoutX="296.0" layoutY="120.0" prefHeight="62.0" prefWidth="541.0" text="Fahrradausleihe" textFill="#570c0c">
+               <font>
+                  <Font name="System Bold" size="42.0" />
+               </font>
+            </Label>
+            <Button fx:id="btAnzeigenAusleihe" layoutX="166.0" layoutY="150.0" mnemonicParsing="false" onAction="#anzeigenAusleihe" text="Suchen Ausleihe" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="tfFahrradausleiheIDWert" editable="false" layoutX="29.0" layoutY="220.0" prefHeight="31.0" prefWidth="61.0" />
+      <TextField fx:id="tfFahrradnummer" layoutX="122.0" layoutY="221.0" prefHeight="31.0" prefWidth="61.0" />
+      <TextField fx:id="tfName" layoutX="188.0" layoutY="221.0" prefHeight="31.0" prefWidth="196.0" />
+      <Label layoutX="31.0" layoutY="198.0" text="AusleiheID" />
+      <Label layoutX="188.0" layoutY="198.0" text="Kundenname" />
+      <Label layoutX="98.0" layoutY="198.0" text="Fahrradnummer" />
+      <DatePicker fx:id="dpAusleihdatum" layoutX="394.0" layoutY="220.0" minHeight="-Infinity" prefHeight="31.0" prefWidth="174.0" promptText="Ausleihdatum" />
+      <TextField fx:id="tfHinweise" editable="false" layoutX="464.0" layoutY="344.0" prefHeight="70.0" prefWidth="380.0">
+         <font>
+            <Font name="Arimo" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="391.0" layoutY="181.0" text="Ausleihdatum" />
+      <TextField fx:id="tfsuchenIDWert" layoutX="52.0" layoutY="113.0" prefHeight="31.0" prefWidth="61.0" />
+      <Label layoutX="52.0" layoutY="96.0" text="gesuchte AusleiheID" />
+      <Label layoutX="29.0" layoutY="164.0" text="gefunden" textFill="#570c0c">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
